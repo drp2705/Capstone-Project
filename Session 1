@@ -1,0 +1,83 @@
+REACT CAPSTONE PROJECT ASSIGNMENT
+Project Idea: Smart E-Commerce Dashboard
+Session 1 – Project Orientation & Idea Finalization
+
+Project Overview
+The Smart E-Commerce Dashboard is a React-based web application designed to provide a modern and user-friendly shopping experience inspired by platforms such as Flipkart, Amazon, and other popular e-commerce applications. The main goal of the project is to allow users to browse products, search and filter items, view detailed product information, manage a shopping cart, and complete a simple checkout process. The project will also include an admin dashboard for managing products and monitoring basic sales information. The application will focus on reusable React components, state management, API/GraphQL integration, authentication, responsive UI design, and a smooth user journey.
+1. Main Goal of the Project
+The main goal of the Smart E-Commerce Dashboard is to build a React-based shopping platform where users can easily discover products, search and filter items, view product details, add products to a cart, and complete the checkout process in a simple and responsive interface. The project will combine practical features commonly found in modern e-commerce applications with React concepts such as reusable components, props, state management, conditional rendering, API integration, and user authentication. An admin dashboard will also be included to provide basic product and order management functionality.
+2. Five Core Features
+No.	Core Feature	Why It Is Important
+1	Product Search & Filtering	Users can quickly find products using keywords, categories, price range, ratings, and other filters instead of browsing the entire product catalog.
+2	Product Details & Reviews	Users can view product images, description, price, specifications, ratings, and reviews before deciding whether to purchase an item.
+3	Shopping Cart	Users can add multiple products, change quantities, remove items, and see the updated cart total before checkout.
+4	Wishlist / Favorites	Users can save products they are interested in and return to them later without having to search for them again.
+5	Checkout & Order History	Users can complete their purchase through a simple checkout flow and later view their previous and current orders from their account.
+3. Main User Journey Flow Diagram
+START
+↓
+Open Smart E-Commerce Dashboard
+↓
+Login / Sign Up
+↓
+Home Page
+↓
+Search / Browse Products
+↓
+Apply Filters / Select Category
+↓
+Product Listing
+↓
+Select Product
+↓
+Product Details
+↓
+Add to Wishlist?  →  Wishlist
+↓
+Add to Cart
+↓
+Shopping Cart
+↓
+Review Items & Quantity
+↓
+Proceed to Checkout
+↓
+Enter Delivery / Order Information
+↓
+Payment / Place Order
+↓
+Order Confirmation
+↓
+My Orders
+↓
+END
+New ideas suggested by ChatGPT:
+ChatGPT suggested adding features such as a wishlist, product reviews and ratings, personalized product recommendations, category-based discovery, responsive design, and an admin dashboard. These features can make the application more realistic and closer to a modern e-commerce platform.
+4. React Implementation of One Feature
+Selected Feature: Product Search & Filtering
+The Product Search & Filtering feature will be implemented using multiple reusable React components and state variables. The main components will be SearchBar, FilterPanel, ProductList, and ProductCard. The ProductList component can manage the main search and filter state, while SearchBar and FilterPanel will receive state values and callback functions through props. ProductList will filter the available products and pass the resulting product data to ProductCard components.
+Example React state:
+const [searchText, setSearchText] = useState("");
+const [category, setCategory] = useState("All");
+const [priceRange, setPriceRange] = useState("All");
+const [products, setProducts] = useState([]);
+Components and shared data:
+•	SearchBar: Shares searchText and the setSearchText callback with the parent component.
+•	FilterPanel: Shares selected category and priceRange values with the parent component.
+•	ProductList: Maintains or receives the filtering state and produces the filtered product array.
+•	ProductCard: Receives individual product information such as id, name, image, price, rating, and category through props.
+Data Flow:
+SearchBar → searchText → ProductList
+FilterPanel → category / priceRange → ProductList
+ProductList → filteredProducts → ProductCard
+ProductCard → selected product → Product Details page
+Whenever the user changes the search text or filters, React updates the corresponding state. The ProductList component then filters the product data and renders only the matching ProductCard components. This approach keeps the UI modular, reusable, and easy to maintain.
+Proposed Technology Stack
+•	Frontend: React.js, JavaScript, HTML5, CSS3
+•	Routing: React Router
+•	Data/API: REST API and/or GraphQL
+•	Authentication: Firebase Authentication
+•	State Management: React useState, useEffect, Context API (as required)
+•	Backend (future integration): Java Spring Boot
+•	Database (future integration): MySQL
+•	Version Control: Git and GitHub
