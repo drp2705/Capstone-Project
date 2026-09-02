@@ -1,0 +1,66 @@
+REACT CAPSTONE PROJECT ASSIGNMENT
+Session 1 – Project Orientation & Idea Finalization
+Topic: Project Scope, Features, AI Brainstorming & User Flow
+1. Project Scope Statement
+Chosen App: Flipkart-style Smart E-Commerce Application
+The proposed React application is a Smart E-Commerce Dashboard inspired by apps such as Flipkart. The main problem it aims to solve is the difficulty of efficiently discovering products, comparing available options, managing a shopping cart, and tracking purchases through a simple interface. The application would provide users with product search, filtering, product details, wishlist, cart, checkout, and order management features, while also giving sellers or administrators a dashboard to manage products and monitor basic sales information. The main users would be online shoppers and sellers/administrators who need a convenient and organized e-commerce platform.
+2. Five Core Features – Smart E-Commerce Dashboard
+No.	Core Feature	How It Helps the User
+1	Product Management	Sellers can add, edit, delete, and update product information so their online catalog stays accurate.
+2	Sales & Revenue Dashboard	Sellers can view important statistics such as total sales, orders, revenue, and product performance in one place.
+3	Order Management	Sellers can view and update customer orders and track their order status efficiently.
+4	Product Search & Filtering	Users can quickly find relevant products by using keywords, categories, price ranges, ratings, and other filters.
+5	Inventory / Stock Management	Sellers can monitor available stock and identify low-stock products so they can avoid unnecessary out-of-stock situations.
+3. Five Unique Features for an AI-Powered Resume Builder
+1.	1. AI Resume Score & Analysis: AI analyzes the resume and provides an overall score with suggestions for improving weak sections, wording, and structure.
+2.	2. Job Description Matching: Users can paste a job description and AI identifies missing skills, keywords, and experience that could improve the resume's relevance.
+3.	3. AI Bullet Point Improver: AI can convert simple job or project descriptions into stronger, professional, achievement-oriented resume bullet points.
+4.	4. Personalized Resume Suggestions: AI can recommend different content and emphasis based on the user's selected target role, such as Java Developer, Frontend Developer, or Full Stack Developer.
+5.	5. AI Cover Letter Generator: After analyzing the resume and target job description, AI can generate a personalized cover letter that matches the candidate's profile and the position.
+4. User Interaction Flow Diagram
+Smart E-Commerce Application – User Journey
+┌──────────────────────────┐
+│          START           │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│      Landing Page        │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│      Login / Sign Up     │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│     User Dashboard       │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│ Search / Browse Products │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│  View Product Details    │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│       Add to Cart        │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│  Checkout / Place Order  │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│    Order Confirmation    │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│     Logout / END         │
+└──────────────────────────┘
+The flow starts when the user opens the application and logs in or creates an account. After reaching the dashboard, the user searches or browses products, views product details, adds a selected product to the cart, completes checkout, receives an order confirmation, and can finally log out.
+5. Comparison of the Three Example Project Themes
+Project Theme	Main Focus	Key Technologies	Learning / Career Value
+AI Resume Builder	AI-assisted resume creation and optimization	React + Firebase + OpenAI API	Strong AI/API experience and useful productivity application.
+Smart E-Commerce Dashboard	Online shopping and seller management	React + Next.js + GraphQL	Strong React practice with dashboards, APIs, state management, and real-world business workflows.
+AI Blog Creator	AI-assisted content creation and publishing	React + Firebase + ChatGPT/OpenAI	Good for AI integration, content workflows, authentication, and CRUD functionality.
